@@ -20,7 +20,7 @@ for database in ${LIST_DATABASES}; do
     fi
 done
 
-if [ ! -z ${DELETE_AFTER} ] && [ ${DELETE_AFTER} -gt 0 ]; then
-    find . -type f -mtime +${DELETE_AFTER} -delete
+if [ ! -z ${DELETE_AFTER_DAYS} ] && [ ${DELETE_AFTER_DAYS} -gt 0 ]; then
+    find . -type f -mtime +${DELETE_AFTER_DAYS} -delete
 fi
 
