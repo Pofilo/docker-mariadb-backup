@@ -1,5 +1,7 @@
 FROM alpine:3.11.6
 
+LABEL maintainer="Pofilo <git@pofilo.fr>"
+
 # TODO: don't use root
 RUN apk add --no-cache mysql-client tar xz
 
