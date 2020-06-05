@@ -13,10 +13,8 @@ ENV CRON_FILE /etc/crontabs/root
 ENV LOG_FILE /app/log/backup.log
 ENV DELETE_AFTER_DAYS 30
 
-COPY entrypoint.sh /entrypoint.sh
-COPY backup.sh /app/
-
-RUN chmod +x /entrypoint.sh
+COPY scripts/entrypoint.sh /entrypoint.sh
+COPY scripts/backup.sh /app/
 
 ENTRYPOINT ["/bin/sh", "/entrypoint.sh"]
 

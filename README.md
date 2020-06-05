@@ -48,3 +48,4 @@ This project is licensed under the GNU GPL License. See the LICENSE file for the
 ## Bugs
 
 If you experience an issue, you have other ideas to the developpement or anything else, feel free to open an issue or to fix it with a PR!
+
